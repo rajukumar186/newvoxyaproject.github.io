@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>file-a-complaint</title>
+    <style>.footer .card a{
+          color:grey;
+          padding:5px;}
+           .card a::hover{
+          color:red;}
+          .footer .card{
+          border:none;}
+          .col a{
+          color:black;
+          text-decoration:none;
+          font-weight:700;}
+          .main-btn{
+          background:white;
+          margin-top:30px;
+          }
+          .form label{
+          font-size:20px;
+          padding:5px;}
+          .form .xyz,
+           .form .raj input{
+          background:light-gray;}
+          .form{
+          display:flex;}
+          .btn-outline-danger{
+          color:grey;
+          padding:5px;}
+          .navbar-collapse{
+        padding-left:500px;}
+        @media(max-width:500px){
+        .navbar-collapse{
+        padding-left:0;}
+        .footer .card{
+        text-align:center;}}
+</style>
+</head>
+<body>
+{% load static %}
+<nav class="navbar  navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png'%}"> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Browse Complaints<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" ><button type="button" class="btn btn-outline-danger">File a Complaints</button></a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+<h6 style="background:red;color:white;width:50%;display:inline;margin-left:30%;" class="text-center">63 approached Consumer Forum in last 12 hrs</h6>
+<div class="card mb-3" style="border:none;" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <h1 style="font-weight:300;padding:50px;">File Complaint</h1>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+          <p class="card-text" style="padding-top:50px;"><i>"My new mobile had problem and company refused to <br>repair it but my problem was resolved through Voxya. Thank You Voxya."</i></p>
+          <p class="card-text" style="text-align:right; margin-right:20%;"><small class="text-muted">____Robert</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form>
+    <div class="form" style=" ">
+    <div class="raj" style="width:40%; padding:40px;">
+    <div class="mb-3" style=" ">
+    <label for="exampleInputEmail1" class="form-label">Title of your complaint </label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex:Package not delivered">
+    </div>
+  <div class="mb-3"style=" ">
+    <label for="exampleInputPassword1" class="form-label">Choose Company/Brand </label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Search Company">
+      <a href="#" style="color:red; text-decoration:none;border-bottom:2px solid red;">Add company name</a><br>
+       <label for="exampleInputPassword1" class="form-label">Total amount of loss from this incident  </label>
+    <input type="password" class="form-control" id="exampleInputPassword" placeholder="₹ 0">
+
+  </div>
+    </div>
+<div class="xyz" style="width:40%; padding:40px;">
+      <label  for="msg"style=" ">Complaint details</label>
+    <textarea   id="msg" cols="33" rows="7" name="message" style="width:100%; " placeholder="**Do not include your personal identifiable information. Your complaint will be publicly shown.** Describe what happened and how you have been victimized. Include date, name of item, location and any other important information which explains how you suffered mentally and financially."></textarea><br>
+    <h5 style="font-weight:300;">Attach evidence to support complaint</h5>
+    <p style="color:red;font-weight:300; border:1px solid black;">IMPORTANT : Evidence is must
+It is mandatory to attach evidence in your complaint. But you can attach them later, by logging in to your Voxya account after posting your complaint.</p>
+<input type="checkbox">I agree with <a href="#">Terms & Condition</a></input><br>
+    <button type="submit" class="btn btn-lg btn-danger my-6">Next</button>
+</div>
+    </div>
+</form>
+
+
+
+
+<!--footer-->
+<div class="footer" style="margin-top:20px;" >
+          <div class="card-group" style="padding-bottom:50px;  ">
+              <div class="card text-center">
+                  <img src="{% static 'img/logo.png'%}" class="img-fluid">
+
+                  <p style="color:#666;">File online consumer complaint from any state or district. We prepare your consumer complaint for consumer court and consumer forum in state or district or any consumer court and forum in India.</p>
+                  <div class="fst">
+                       <a class="link" href="https://youtube.com"><i class="fab fa-youtube fa-1.5x  "></i></a>
+                <a class="link" href="https://en-gb.facebook.com/public/Raju-Kumar-Anuragi"><i class="fab fa-facebook fa-1.5x  "></i></a>
+                <a class="link" href="https://twitter.com/rajukum53143215"><i class="fab fa-twitter fa-1.5x  "></i></a>
+                <a  class="link" href="https://www.instagram.com/raju_kumar3164/"><i class="fab fa-instagram fa-1.5x  "></i></a>
+            </div>
+                   <a href="#" ><img src="{% static 'badge-android-grey.png'%}"> </a>
+              </div>
+              <div class="card" style="padding:10px;">
+                  <h6>Home</h6>
+                  <a href="#">Home</a>
+                   <a href="#">Register</a>
+                  <a href="#">Login</a>
+                   <a href="#">Company Registration</a>
+                  <a href="#">Lawyer Registration</a>
+                   <a href="#">Check Case Status</a>
+
+              </div>
+               <div class="card">
+                  <h6>Take Action</h6>
+                   <a href="#">File a Complaints</a>
+                   <a href="#">Talk to Lawyer</a>
+
+              </div>
+               <div class="card">
+                  <h6>Resources</h6>
+                   <a href="#">Browse Complaints</a>
+                   <a href="#">Consumer Forum</a>
+                   <a href="#">Search Company</a>
+                   <a href="#">Online Complaints</a>
+                   <a href="#">Lawyer & Advocates</a>
+                   <a href="#">Latest scams</a>
+                   <a href="#">Consumer Club</a>
+
+              </div>
+               <div class="card">
+                  <h6>More</h6>
+                    <a href="#">Stories</a>
+                   <a href="#">Testimonials</a>
+                   <a href="#">FAQs</a>
+                   <a href="#">Help</a>
+                   <a href="#">Privacy Policy</a>
+                   <a href="#">Refund Policy</a>
+                   <a href="#">Terms & Conditions</a>
+
+              </div>
+
+
+
+          </div>
+          <p class="text-center container" style="padding-bottom:60px; color:grey;font-weight:300;">Voxya does not provide legal advice and does not create an attorney-client relationship. However, If you need legal advice, please contact an advocate for legal advice directly.
+Voxya is an independent platform and it is not affiliated with any Brand, Company, Government agencies or Forums.
+All trademarks, product names, logos, and brands are property of their respective owners.</p>
+      </div>
+
+
+</body>
+</html>

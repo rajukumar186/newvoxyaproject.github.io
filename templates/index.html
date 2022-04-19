@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>Online Consumer Complaint Forum-Voxya Consumer Forum</title>
+      <style>
+          .footer .card a{
+          color:grey;
+          padding:5px;}
+           .card a::hover{
+          color:red;}
+          .footer .card{
+          border:none;}
+          .col a{
+          color:black;
+          text-decoration:none;
+          font-weight:700;}
+          .main-btn{
+          background:white;
+          margin-top:30px;
+          }
+          .btn-outline-danger{
+          color:grey;
+          padding:5px;}
+
+
+           .col-md-4 {
+            display: inline-block;
+            margin-left: -4px;
+        }
+
+        .col-md-4 {
+            width: 100%;
+            height: auto;
+        }
+        .navbar-collapse{
+        padding-left:500px;}
+        @media(max-width:500px){
+        .navbar-collapse{
+        padding-left:0;}
+        .footer .card{
+        text-align:center;}}
+
+        body .carousel-control-indicator li {
+            background-color: blue;
+        }
+
+        body .carousel-control-prev-icon body .carousel-control-next-icon {
+            background-color: blue;
+        }
+        body .carousel-control-prev-icon body{
+        }
+
+        body .no-padding {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .carousel-control-prev-icon {
+            background: black no-repeat center center;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+        }
+
+        .carousel-control-next-icon {
+            background: black no-repeat center center;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+
+        }
+        body .carousel-indicators{
+
+        }
+
+        .carousel-indicators .active{
+        background-color: blue;
+        }
+
+
+      </style>
+  </head>
+  <body>
+  {% load static %}
+  <!--- nav--bar--->
+  <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png'%}"> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+   <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+             <a class="nav-link" href="#">Browse Complaints<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+             <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/filecomplaint" tabindex="-1" ><button type="button" class="btn btn-outline-danger">File a Complaints</button></a>
+        </li>
+    </ul>
+   </div>
+  </nav>
+<!-----header------------------------------->
+  <div class="card mb-6" style="margin:30px;border:none;">
+      <div class="row g-0">
+                <div class="col-md-5">
+                  <img src="{% static 'user.webp'%}" class="img-fluid rounded-start" alt="...">
+                </div>
+          <div class="col-md-7">
+              <div class="card-body" style="margin-top:40px;">
+                  <h1 class="card-title" style="font-size:60px;"><b>Resolve your <br>complaints<br> easily.</b></h1>
+                   <p class="card-text" style="margin-bottom:50px;font-size:18px;">Submit your complaint,sit back & relax<br> while we fight on your behalf.</p>
+                   <a href="/filecomplaint" class="btn-danger"><button type="button" class="btn btn-dark">File A Complaints</button></a>
+              </div>
+          </div>
+      </div>
+  </div>
+       <div class="card-group">
+        <div class="card" style="background-color:#D0021B;color:white; padding:20px;">
+            <h1>India's trusted platform to resolve consumer complaints.</h1>
+            <p>Get refund, replacement or compensation from brands.</p>
+            <p>Raise your voice and leverage our unique social media, business network & legal framework to resolve complaints.</p>
+             <a href="/filecomplaint" style=" "> <button type="button" class="btn main-btn btn-outline-dark">File a Complaints</button></a>
+        </div>
+        <div class="col">
+           <div>
+              <h2><i class="fa fa-globe" aria-hidden="true"></i></h2>
+                  <a href="#">Travel complaints</a>
+              <p>Flights Cancelled, No Refund, Unresponsive help, Over Billing...</p>
+           </div>
+           <div>
+              <h2>  <i class="fa fa-building" aria-hidden="true"></i></h2>
+              <a href="#">Real Estate complaints</a>
+              <p>Flights Cancelled, No Refund, Unresponsive help, Over Billing...</p>
+           </div>
+           <div>
+               <h3><i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                   <a href="#">Insurance complaints</a>
+              <p>Flights Cancelled, No Refund, Unresponsive help, Over Billing...</p>
+           </div>
+            <div>
+                  <h3><i class="fa fa-university" aria-hidden="true"></i></h3>
+                  <a href="#">Banking complaints</a>
+                  <p>Flights Cancelled, No Refund, Unresponsive help, Over Billing...</p>
+            </div>
+        </div>
+    <div class="col">
+      <div>
+      <h2>  <i class="fa fa-book" aria-hidden="true"></i></i></h2>
+      <a href="#">Education  complaints</a>
+      <p>Flights Cancelled, No Refund, Unresponsive help, Over Billing...</p>
+      </div>
+       <div>
+      <h2><i class="fa fa-car" aria-hidden="true"></i></h2>
+      <a href="#">Automobiles complaints</a>
+      <p>Flights Cancelled, No Refund, Unresponsive help, Over Billing...</p>
+      </div>
+       <div>
+      <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i></h2>
+      <a href="#">Ecommerce complaints</a>
+      <p>Flights Cancelled, No Refund, Unresponsive help, Over Billing...</p>
+      </div>
+       <div>
+      <h3> <i class="fa fa-plus-square" aria-hidden="true"></i></h3>
+      <a href="#">Medical complaints</a>
+      <p>Flights Cancelled, No Refund, Unresponsive help, Over Billing...</p>
+      </div>
+
+    </div></div>
+        <div class="maincontent" style="margin-top:50px;">
+          <h1 style="text-align:center;">Post a complaint, <b>leave the rest</b> to us</h1>
+           <p style="text-align:center;">Stop wasting hours talking with customer support. Get resolution<br>with minimum efforts and reclaim your family time.</p>
+        </div>
+        <div class="row">
+            <img src="{% static 'img/resolution.webp'%}" class="img-fluid">
+        </div>
+        <div class="card-group container">
+            <div class="card" style="border:none;">
+                <h1>On a mission to<br>Fight for Consumers<br>in India</h1>
+                <img src="{% static 'img/v-logo.webp'%}" class="img-fluid text-center" height="50%" width="50%"  >
+            </div>
+            <div class="card" style="border:none;">
+                  <h4>We are determined to redefine the way consumers are treated in India.</h4><br>
+                  <h5> Protect Consumers</h5>
+                  <p>Scam Watch, safety tips and help guides for you to protect from fraud & injustice.</p>
+                  <h5>Help Consumers</h5>
+                  <p>Reach decision maker, send email, get attention from brand via social campaigns.</p>
+                  <h5>Fight for Consumers</h5>
+                  <p>Take legal action and approach Consumer forum with experienced lawyers.</p>
+            </div>
+        </div>
+                  <h1 style="text-align:center;">Our <b>Numbers</b> says it all</h1>
+                  <h4 style="text-align:center;">Voxya works tirelessly with you & brand to get the resolution<br>you demand. We are proud of our success so far.</h4>
+
+  <!--------section------------------------------------------>
+
+  <section class="features" >
+        <div class="containe" style=" ">
+            <div class="card-group">
+                   <div class="card pd-2px" style="margin:20px; padding:20px;border-radius:5%; background:linear-gradient(25deg,#d64c7f,#ee4758 50%); color:white;">
+                       <div class="card-body">
+                            <h3 class="card-title" style="text-align:center">99K+</h3>
+                            <p class="card-text">Complaints Filed by Consumers</p>
+                       </div>
+                   </div>
+                   <div class="card" style="margin:20px; padding:20px; border-radius:5%; background:black;color:#fff;">
+                       <div class="card-body">
+                              <h3 class="card-title" style="text-align:center">77K+</h3>
+                              <p class="card-text">Complaints Resolved by Companies</p>
+                       </div>
+                   </div>
+                   <div class="card" style="border-radius:5%;margin:20px; padding:20px;background:linear-gradient(25deg,#d64c7f,#ee4758 50%); color:white;">
+                        <div class="card-body">
+                            <h3 class="card-title card-text"  >  ₹  29B+</h3>
+                            <p class="card-text"> Damages Claimed by Consumers</p>
+                        </div>
+                   </div>
+            </div>
+        </div>
+     </section>
+              <h1 style="text-align:center;">Why We Win ?</h1>
+              <p style="text-align:center;">We have helped thousands of consumers find a resolution<br> using our unique Dispute Resolution Process.</p>
+             <img src="{% static 'img/voxya-dispute-resolution-process.webp'%}" class="img-fluid">
+             <div class="sec2" style="background-color:#D0021B; border-radius:2%;">
+                                 <h1 style="text-align:center;color:white;">Why Consumers Love Voxya</h1>
+                                 <h5 style="text-align:center;color:white;">Take legal action easily & affordably by working<br>with a company which focuses on resolution.</h5>
+                      <div class="container" style="max-width:950px;">
+                                     <div class="card-group">
+                                           <div class="card pd-2px" style="margin:20px; padding:20px; background:white; color:black;border-radius:5%;">
+                                                   <i class="fas fa-route text-red fa-3x" style="text-align:center"></i>
+                                                <div class="card-body">
+                                                    <h3 class="card-title" style="text-align:center">Affordable</h3>
+                                                    <p class="card-text">Don't pay hefty legal fees. Get the best lawyers from the comfort of your home at much affordable rates.</p>
+                                                </div>
+                                           </div>
+                                           <div class="card" style="margin:20px; padding:20px;  background:white;
+                                                color:black;border-radius:5%;">
+                                                 <i class="fas fa-dollar-sign fa-3x" style="text-align:center"></i>
+                                                <div class="card-body">
+                                                  <h3 class="card-title" style="text-align:center">Quick & Easy</h3>
+                                                  <p class="card-text">No more long and tiring processes to get resolution. Post your complaint and see it resolved in short time.</p>
+                                                </div>
+                                           </div>
+                                           <div class="card" style="margin:20px; padding:20px;background:white; color:black;border-radius:5%;">
+                                                 <i class="fas fa-user-check text-red fa-3x" style="text-align:center"></i>
+                                                <div class="card-body">
+                                                  <h3 class="card-title" style="text-align:center">Get Attention</h3>
+                                                  <p class="card-text">Tried everything that you could do, still unable to get the attention of the brand? Don’t worry Voxya is there for you.</p>
+                                                </div>
+                                           </div>
+                                     </div>
+                               </div>
+                             <div class="container" style="max-width:950px;">
+                                <div class="card-group">
+                                      <div class="card pd-2px" style="margin:20px; padding:20px; background:white;color:black;border-radius:5%;">
+                                             <i class="fas fa-route text-red fa-3x" style="text-align:center"></i>
+                                         <div class="card-body">
+                                              <h3 class="card-title" style="text-align:center">Competent Lawyers</h3>
+                                               <p class="card-text"> Voxya has the largest network of verified Lawyers who make sure that they solve your problelms every single time.</p>
+                                         </div>
+                                      </div>
+                                      <div class="card" style="margin:20px; padding:20px;  background:white;color:black;border-radius:5%;">
+                                                 <i class="fas fa-dollar-sign fa-3x" style="text-align:center"></i>
+                                            <div class="card-body">
+                                                 <h3 class="card-title" style="text-align:center">Notification</h3>
+                                                 <p class="card-text">  Get regular updates about your compaint and how long it should take to resolve it, so you stay on the same page</p>
+                                            </div>
+                                      </div>
+                                      <div class="card img-center"  style="margin:20px; padding:20px;background:white;color:black;border-radius:5%;">
+                                                <i class="fas fa-user-check text-red fa-3x" style="text-align:center"></i>
+                                            <div class="card-body">
+                                               <h3 class="card-title" style="text-align:center">24x7 Platform</h3>
+                                               <p class="card-text">No more waiting for the right time. Voxya is available for you 24x7. File a complaint or check updates anytime.</p>
+                                            </div>
+                                      </div>
+                                </div>
+                             </div>
+             </div>>
+                                       <h1 style="text-align:center;">Active Companies that care</h1>
+                                        <p style="text-align:center;">Empowering hundreds of brands in India to<br>offer quick response & resolution.</p>
+                                       <img src="{% static 'img/company-image.webp'%}" class="img-fluid">
+                                       <h1 style="text-align:left;">What our <b>clients</b> are saying</h1>
+                                       <h4 style="text-align:left;">Read ever growing success stories from<br>our happy customers in India.</h4>
+
+
+  <!--        carousel indicators starts from here-->
+
+    <div class="container">
+        <div id="demo" class="carousel slide my-3" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+               <li data-target="#demo" data-slide-to="1" ></li>
+
+            </ul>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-4">
+                  <div class="card" style="width: 18rem;border:none;">
+                       <div class="card-body" style="background:lightgray; border-radius:5%;">
+                        <p>"With umpteen number of follow ups through multiple communication mechanisms, my issue was not resolved. Voxya helped me to get my refund in just one day!"</p>
+                        <h4>Xiaomi complaint</h4>
+                        <p>S harsh</p>
+                    </div>
+                      <div class="card-body" style="background:lightgray; margin-top:40px;border-radius:5%;">
+                        <p>"With umpteen number of follow ups through multiple communication mechanisms, my issue was not resolved. Voxya helped me to get my refund in just one day!"</p>
+                        <h4>Xiaomi complaint</h4>
+                        <p>S harsh</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-4">
+                  <div class="card" style="width: 18rem; margin-top:40px;color:white; border:none;">
+
+                     <div class="card-body" style="background:red; border-radius:5%;">
+                        <p>"With umpteen number of follow ups through multiple communication mechanisms, my issue was not resolved. Voxya helped me to get my refund in just one day!"</p>
+                        <h4>Xiaomi complaint</h4>
+                        <p>S harsh</p>
+                    </div>
+                      <div class="card-body" style="background:red; margin-top:40px;border-radius:5%;">
+                        <p>"With umpteen number of follow ups through multiple communication mechanisms, my issue was not resolved. Voxya helped me to get my refund in just one day!"</p>
+                        <h4>Xiaomi complaint</h4>
+                        <p>S harsh</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-4">
+                  <div class="card" style="width: 18rem; border:none;">
+
+                     <div class="card-body" style="background:lightgray; border-radius:5%;">
+                        <p>"With umpteen number of follow ups through multiple communication mechanisms, my issue was not resolved. Voxya helped me to get my refund in just one day!"</p>
+                        <h4>Xiaomi complaint</h4>
+                        <p>S harsh</p>
+                    </div>
+                      <div class="card-body" style="background:lightgray; margin-top:40px; border-radius:5%;">
+                        <p>"With umpteen number of follow ups through multiple communication mechanisms, my issue was not resolved. Voxya helped me to get my refund in just one day!"</p>
+                        <img src="{% static 'img/plane.jpg'%}" class="img"   style="border-radius:50%;height:20%;width:30%;" alt="..."><h4>Xiaomi complaint</h4>
+                        <p>S harsh</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-md-4">
+                   <div class="card" style="width: 18rem;color:white;border:none;">
+                    <div class="card-body" style="background:red;   border-radius:5%;">
+                      <p class="card-title">"In this pandemic, Voxya helped me to get my hard earned money back. I've no words to explain how happy I am.If you are deputed by onlinescams,come to voxya for help."</p>
+                      <h4>Travolook Complaint</h4>
+                        <p>Sainathan G Iyer</p>
+                    </div>
+                       <div class="card-body" style="background:red; margin-top:40px; border-radius:5%;">
+                      <p class="card-title">"In this pandemic, Voxya helped me to get my hard earned money back. I've no words to explain how happy I am.If you are deputed by onlinescams,come to voxya for help."</p>
+                      <h4>Travolook Complaint</h4>
+                        <p>Sainathan G Iyer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-4">
+                  <div class="card" style="width: 18rem; border:none; ">
+                    <div class="card-body" style="background:lightgray; border-radius:5%;">
+                        <p>"With umpteen number of follow ups through multiple communication mechanisms, my issue was not resolved. Voxya helped me to get my refund in just one day!"</p>
+                        <h4>Xiaomi complaint</h4>
+                        <p>S harsh</p>
+                    </div>
+                       <div class="card-body" style="margin-top:40px;background:lightgray; border-radius:5%;">
+                        <p>" I am very satisfied with Voxya. I got a call from Swiggy that they have initiated the refund for the misplaced order and that they are apologetic about it."</p>
+                        <h4>Swiggy Complaint</h4>
+                        <p>Shruti Karanth</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-4">
+                  <div class="card" style="width: 18rem; color:white;border:none;">
+                     <div class="card-body" style=" background:red; border-radius:5%;">
+                        <p>" I am very satisfied with Voxya. I got a call from Swiggy that they have initiated the refund for the misplaced order and that they are apologetic about it."</p>
+                        <h4>Swiggy Complaint</h4>
+                        <p>Shruti Karanth</p>
+                    </div>
+                      <div class="card-body" style="background:red; margin-top:40px; border-radius:5%;">
+                      <p class="card-title">"In this pandemic, Voxya helped me to get my hard earned money back. I've no words to explain how happy I am.If you are deputed by onlinescams,come to voxya for help."</p>
+                      <h4>Travolook Complaint</h4>
+                        <p>Sainathan G Iyer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
+ <a class="carousel-control-prev " href="#demo" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span></a>
+        </div>
+
+    </div>
+
+
+
+                     <h1 style="text-align:center;">600+ <b> Lawyers</b> to help you</h1>
+                     <h5 style="text-align:center;">We are a bunch of legal and tech experts who are<br>on a mission to help consumers.</h5>
+                     <img src="{% static 'img/lawyer-banner.webp'%}" class="img-fluid">
+               <div class="sec-nine text-center" style="background:#D0021B; padding:50px;">
+                      <h1 style="text-align:center;color:white;">Not getting refund, response or replacement?</h1>
+                       <h5 style="text-align:center;color:white;">File a Complaint today and let our experts help you<br>in taking legal action and getting resolution.</h5>
+                       <a href="/filecomplaint" style=" "> <button type="button" class="btn main-btn btn-outline-dark">File a Complaints</button></a>
+               </div>
+               <div class="sec-ninetwo" style="padding-top:50px;">
+                       <h1>Frequiently asked<br> questions.</h1>
+                       <div class="card-group" >
+                             <div class="card" style="border:none;">
+                                  <div class="card-body" style="padding:30px;">
+                                          <h4 class="card-title">Can I take action against online sellers or service providers?</h4>
+                                          <p class="card-text">The Consumer Protection Act, 2019 has replaced the old Consumer Protection Act, 1986. The definition of "Consumer" has been widened and it now covers even Ecommerce transactions including online transactions, tele-shopping, direct selling or multi-level marketing. Hence, you can file consumer case against ecommerce sellers, banks, travel agents, insurance companies, real estate builders, educational institutes, hospitals or D2H service providers etc.</p>
+                                  </div>
+                             </div>
+                              <div class="card" style="border:none;">
+                                  <div class="card-body" style="padding:30px;">
+                                        <h4 class="card-title"> How can I file a consumer complaint?</h4>
+                                         <p class="card-text"> You can file a consumer complaint in 4 steps:
+                                                1. Provide the company name and write your complaint in detail
+                                                2. Enter personal information to create an account
+                                                3. Choose the resolution you require - refund, replacement, apology or compensation
+                                                4. Submit your complaint
+                                                You need to attach evidence & complete your KYC verification for sending Legal Notice and approaching the consumer forum.</p>
+                                  </div>
+                              </div>
+                              <div class="card" style="border:none;">
+                                          <div class="card-body">
+                                              <h5 class="card-title">Can I file consumer complaints from anywhere in India?</h5>
+                                              <p class="card-text">The updated Consumer Protection Act 2019 allows the consumers to file cases in any nearby consumer forum where they work or have residence. Voxya, a consumer complaint website in India provides an online consumer forum to consumers to take legal action.</p>
+                                        </div>
+                              </div>
+
+                        </div>
+                       <div class="card-group">
+                                     <div class="card" style="border:none;">
+                                         <div class="card-body">
+                                              <h4 class="card-title">Where can I file consumer complaints online?</h4>
+                                              <p class="card-text">  You can file consumer complaints at voxya.com which is an online consumer forum and complaint website in India. The process to approach consumer forum online is very simple and straight forward.</p>
+                                         </div>
+                                     </div>
+                                     <div class="card"style="border:none;">
+                                           <div class="card-body" style="padding:30px;">
+                                                  <h4 class="card-title"> Can I take action against false or misleading advertisements?</h4>
+                                                  <p class="card-text">Yes, a consumer can take action against false or misleading advertisements. The Consumer Protection Act 2019 provides a penalty or up to 2 year imprisonment to a manufacturer or an endorser for a false or misleading advertisement.</p>
+                                          </div>
+                                    </div>
+                                   <div class="card"style="border:none;">
+                                          <div class="card-body"  >
+                                              <i class="fa fa-check-square-o" aria-hidden="hide"></i>
+                                               <h4 class="card-title col-check"><i class="fa fa-check-square-o" aria-hidden="False"></i>Where can I file consumer complaints online?</h4>
+                                               <p class="card-text">  You can file consumer complaints at voxya.com which is an online consumer forum and complaint website in India. The process to approach consumer forum online is very simple and straight forward.</p>
+                                        </div>
+                                   </div>
+                       </div>
+               </div>
+         <!-- #footer//////////////////////////////////////////////-->
+      <div class="footer" style="margin-top:50px;" >
+          <div class="card-group" style="padding-bottom:50px;  ">
+              <div class="card text-center">
+                  <img src="{% static 'img/logo.png'%}" class="img-fluid">
+                   <p style="color:#666;">File online consumer complaint from any state or district. We prepare your consumer complaint for consumer court and consumer forum in state or district or any consumer court and forum in India.</p>
+                  <div class="fst">
+                        <a class="link" href="https://youtube.com"><i class="fab fa-youtube fa-1.5x  "></i></a>
+                        <a class="link" href="https://en-gb.facebook.com/public/Raju-Kumar-Anuragi"><i class="fab fa-facebook fa-1.5x  "></i></a>
+                        <a class="link" href="https://twitter.com/rajukum53143215"><i class="fab fa-twitter fa-1.5x  "></i></a>
+                        <a  class="link" href="https://www.instagram.com/raju_kumar3164/"><i class="fab fa-instagram fa-1.5x  "></i></a>
+                  </div>
+                        <a href="#" ><img src="{% static 'badge-android-grey.png'%}"> </a>
+              </div>
+              <div class="card" style="padding:10px;">
+                  <h6>Home</h6>
+                  <a href="/">Home</a>
+                   <a href="#">Register</a>
+                  <a href="/login">Login</a>
+                   <a href="#">Company Registration</a>
+                  <a href="#">Lawyer Registration</a>
+                   <a href="#">Check Case Status</a>
+
+              </div>
+               <div class="card">
+                  <h6>Take Action</h6>
+                   <a href="/filecomplaint">File a Complaints</a>
+                   <a href="#">Talk to Lawyer</a>
+               </div>
+               <div class="card">
+                  <h6>Resources</h6>
+                   <a href="#">Browse Complaints</a>
+                   <a href="#">Consumer Forum</a>
+                   <a href="#">Search Company</a>
+                   <a href="#">Online Complaints</a>
+                   <a href="#">Lawyer & Advocates</a>
+                   <a href="#">Latest scams</a>
+                   <a href="#">Consumer Club</a>
+               </div>
+               <div class="card">
+                  <h6>More</h6>
+                    <a href="#">Stories</a>
+                   <a href="#">Testimonials</a>
+                   <a href="#">FAQs</a>
+                   <a href="#">Help</a>
+                   <a href="#">Privacy Policy</a>
+                   <a href="#">Refund Policy</a>
+                   <a href="#">Terms & Conditions</a>
+               </div>
+          </div>
+                          <p class="text-center container" style="padding-bottom:60px; color:grey;font-weight:300;">Voxya does not provide legal advice and does not create an attorney-client relationship. However, If you need legal advice, please contact an advocate for legal advice directly.
+                Voxya is an independent platform and it is not affiliated with any Brand, Company, Government agencies or Forums.
+                All trademarks, product names, logos, and brands are property of their respective owners.</p>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

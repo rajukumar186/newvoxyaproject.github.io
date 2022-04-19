@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <title>Login</title>
+  <style>
+    .loginform{
+    display:flex;}
+    .loginform h1{
+    font-weight:300;}
+    .loginform .btn-danger{
+    text-align:right;
+    padding:5px;
+    }
+    .loginform input{
+    background:lightgray;
+    padding:20px;}
+    .form{
+    width:40%;
+    margin:50px;}
+    .signupform{
+    width:40%;
+    margin:50px;}
+    @media(max-width:500px){
+    .loginform form{
+    flex-direction:column}}
+     .footer .card a{
+          color:grey;
+          padding:5px;}
+           .card a::hover{
+          color:red;}
+          .footer .card{
+          border:none;}
+          .col a{
+          color:black;
+          text-decoration:none;
+          font-weight:700;}
+          .main-btn{
+          background:white;
+          margin-top:30px;
+          }
+          .btn-outline-danger{
+          color:grey;
+          padding:5px;}
+          .navbar-collapse{
+        padding-left:500px;}
+        @media(max-width:500px){
+        .navbar-collapse{
+        padding-left:0;}
+        .footer .card{
+        text-align:center;}}
+  </style>
+</head>
+<body>
+{% load static %}
+      <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png'%}"> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Browse Complaints<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" ><button type="button" class="btn btn-outline-danger">File a Complaints</button></a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+<div class="loginform">
+<div class="form">
+  <h1>Sign In</h1>
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+    </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+      <a href="#" style="color:red; text-decoration:none;border-bottom:2px solid red;">Forget Password ?</a>
+  <button type="submit" class="btn btn-danger">Login</button>
+</form>
+</div>
+<div class="signupform">
+  <h1>Create Account</h1>
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputname" class="form-label">Full Name</label>
+    <input type="email" class="form-control" id="exampleInputname" aria-describedby="emailHelp" placeholder="Will be used in your complaint">
+    </div>
+       <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Will be used for sending email">
+    </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Will be used for login">
+  </div>
+  <button type="submit" class="btn btn-danger">Get Started</button>
+</form>
+</div>
+</div>
+<!---footer---->
+ <div class="footer" style="margin-top:50px;" >
+          <div class="card-group" style="padding-bottom:50px;  ">
+              <div class="card text-center">
+                  <img src="{% static 'img/logo.png'%}" class="img-fluid">
+
+                  <p style="color:#666;">File online consumer complaint from any state or district. We prepare your consumer complaint for consumer court and consumer forum in state or district or any consumer court and forum in India.</p>
+                  <div class="fst">
+                       <a class="link" href="https://youtube.com"><i class="fab fa-youtube fa-1.5x  "></i></a>
+                <a class="link" href="https://en-gb.facebook.com/public/Raju-Kumar-Anuragi"><i class="fab fa-facebook fa-1.5x  "></i></a>
+                <a class="link" href="https://twitter.com/rajukum53143215"><i class="fab fa-twitter fa-1.5x  "></i></a>
+                <a  class="link" href="https://www.instagram.com/raju_kumar3164/"><i class="fab fa-instagram fa-1.5x  "></i></a>
+            </div>
+                   <a href="#" ><img src="{% static 'badge-android-grey.png'%}"> </a>
+              </div>
+              <div class="card" style="padding:10px;">
+                  <h6>Home</h6>
+                  <a href="#">Home</a>
+                   <a href="#">Register</a>
+                  <a href="#">Login</a>
+                   <a href="#">Company Registration</a>
+                  <a href="#">Lawyer Registration</a>
+                   <a href="#">Check Case Status</a>
+
+              </div>
+               <div class="card">
+                  <h6>Take Action</h6>
+                   <a href="#">File a Complaints</a>
+                   <a href="#">Talk to Lawyer</a>
+
+              </div>
+               <div class="card">
+                  <h6>Resources</h6>
+                   <a href="#">Browse Complaints</a>
+                   <a href="#">Consumer Forum</a>
+                   <a href="#">Search Company</a>
+                   <a href="#">Online Complaints</a>
+                   <a href="#">Lawyer & Advocates</a>
+                   <a href="#">Latest scams</a>
+                   <a href="#">Consumer Club</a>
+
+              </div>
+               <div class="card">
+                  <h6>More</h6>
+                    <a href="#">Stories</a>
+                   <a href="#">Testimonials</a>
+                   <a href="#">FAQs</a>
+                   <a href="#">Help</a>
+                   <a href="#">Privacy Policy</a>
+                   <a href="#">Refund Policy</a>
+                   <a href="#">Terms & Conditions</a>
+
+              </div>
+
+
+
+          </div>
+          <p class="text-center container" style="padding-bottom:60px; color:grey;font-weight:300;">Voxya does not provide legal advice and does not create an attorney-client relationship. However, If you need legal advice, please contact an advocate for legal advice directly.
+Voxya is an independent platform and it is not affiliated with any Brand, Company, Government agencies or Forums.
+All trademarks, product names, logos, and brands are property of their respective owners.</p>
+      </div>
+
+
+
+
+
+
+</body>
+</html>
