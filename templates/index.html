@@ -87,10 +87,10 @@
       </style>
   </head>
   <body>
-  {% load static %}
+  <!--{% load static %}-->
   <!--- nav--bar--->
   <nav class="navbar  navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png'%}"> </a>
+      <a class="navbar-brand" href="./index.html"><img src=".//static/logo.png"> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -100,10 +100,10 @@
              <a class="nav-link" href="#">Browse Complaints<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-             <a class="nav-link" href="/login">Login</a>
+             <a class="nav-link" href="./form.html">Login</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/filecomplaint" tabindex="-1" ><button type="button" class="btn btn-outline-danger">File a Complaints</button></a>
+            <a class="nav-link" href="./filecomplaint.html" tabindex="-1" ><button type="button" class="btn btn-outline-danger">File a Complaints</button></a>
         </li>
     </ul>
    </div>
@@ -112,13 +112,13 @@
   <div class="card mb-6" style="margin:30px;border:none;">
       <div class="row g-0">
                 <div class="col-md-5">
-                  <img src="{% static 'user.webp'%}" class="img-fluid rounded-start" alt="...">
+                  <img src=".//static/user.webp" class="img-fluid rounded-start" alt="...">
                 </div>
           <div class="col-md-7">
               <div class="card-body" style="margin-top:40px;">
                   <h1 class="card-title" style="font-size:60px;"><b>Resolve your <br>complaints<br> easily.</b></h1>
                    <p class="card-text" style="margin-bottom:50px;font-size:18px;">Submit your complaint,sit back & relax<br> while we fight on your behalf.</p>
-                   <a href="/filecomplaint" class="btn-danger"><button type="button" class="btn btn-dark">File A Complaints</button></a>
+                   <a href="./filecomplaint.html" class="btn-danger"><button type="button" class="btn btn-dark">File A Complaints</button></a>
               </div>
           </div>
       </div>
@@ -128,7 +128,7 @@
             <h1>India's trusted platform to resolve consumer complaints.</h1>
             <p>Get refund, replacement or compensation from brands.</p>
             <p>Raise your voice and leverage our unique social media, business network & legal framework to resolve complaints.</p>
-             <a href="/filecomplaint" style=" "> <button type="button" class="btn main-btn btn-outline-dark">File a Complaints</button></a>
+             <a href="./filecomplaint.html" style=" "> <button type="button" class="btn main-btn btn-outline-dark">File a Complaints</button></a>
         </div>
         <div class="col">
            <div>
@@ -180,12 +180,12 @@
            <p style="text-align:center;">Stop wasting hours talking with customer support. Get resolution<br>with minimum efforts and reclaim your family time.</p>
         </div>
         <div class="row">
-            <img src="{% static 'img/resolution.webp'%}" class="img-fluid">
+            <img src=".//static/img/resolution.webp" class="img-fluid">
         </div>
         <div class="card-group container">
             <div class="card" style="border:none;">
                 <h1>On a mission to<br>Fight for Consumers<br>in India</h1>
-                <img src="{% static 'img/v-logo.webp'%}" class="img-fluid text-center" height="50%" width="50%"  >
+                <img src=".//static/img/v-logo.webp" class="img-fluid text-center" height="50%" width="50%"  >
             </div>
             <div class="card" style="border:none;">
                   <h4>We are determined to redefine the way consumers are treated in India.</h4><br>
@@ -228,7 +228,7 @@
      </section>
               <h1 style="text-align:center;">Why We Win ?</h1>
               <p style="text-align:center;">We have helped thousands of consumers find a resolution<br> using our unique Dispute Resolution Process.</p>
-             <img src="{% static 'img/voxya-dispute-resolution-process.webp'%}" class="img-fluid">
+             <img src=".//static/img/voxya-dispute-resolution-process.webp" class="img-fluid">
              <div class="sec2" style="background-color:#D0021B; border-radius:2%;">
                                  <h1 style="text-align:center;color:white;">Why Consumers Love Voxya</h1>
                                  <h5 style="text-align:center;color:white;">Take legal action easily & affordably by working<br>with a company which focuses on resolution.</h5>
@@ -286,7 +286,7 @@
              </div>>
                                        <h1 style="text-align:center;">Active Companies that care</h1>
                                         <p style="text-align:center;">Empowering hundreds of brands in India to<br>offer quick response & resolution.</p>
-                                       <img src="{% static 'img/company-image.webp'%}" class="img-fluid">
+                                       <img src=".//static/img/company-image.webp" class="img-fluid">
                                        <h1 style="text-align:left;">What our <b>clients</b> are saying</h1>
                                        <h4 style="text-align:left;">Read ever growing success stories from<br>our happy customers in India.</h4>
 
@@ -343,7 +343,7 @@
                     </div>
                       <div class="card-body" style="background:lightgray; margin-top:40px; border-radius:5%;">
                         <p>"With umpteen number of follow ups through multiple communication mechanisms, my issue was not resolved. Voxya helped me to get my refund in just one day!"</p>
-                        <img src="{% static 'img/plane.jpg'%}" class="img"   style="border-radius:50%;height:20%;width:30%;" alt="..."><h4>Xiaomi complaint</h4>
+                        <img src=".//static/img/plane.jpg" class="img"   style="border-radius:50%;height:20%;width:30%;" alt="..."><h4>Xiaomi complaint</h4>
                         <p>S harsh</p>
                     </div>
                   </div>
@@ -415,11 +415,11 @@
 
                      <h1 style="text-align:center;">600+ <b> Lawyers</b> to help you</h1>
                      <h5 style="text-align:center;">We are a bunch of legal and tech experts who are<br>on a mission to help consumers.</h5>
-                     <img src="{% static 'img/lawyer-banner.webp'%}" class="img-fluid">
+                     <img src=".//static/img/lawyer-banner.webp" class="img-fluid">
                <div class="sec-nine text-center" style="background:#D0021B; padding:50px;">
                       <h1 style="text-align:center;color:white;">Not getting refund, response or replacement?</h1>
                        <h5 style="text-align:center;color:white;">File a Complaint today and let our experts help you<br>in taking legal action and getting resolution.</h5>
-                       <a href="/filecomplaint" style=" "> <button type="button" class="btn main-btn btn-outline-dark">File a Complaints</button></a>
+                       <a href="./filecomplaint.html" style=" "> <button type="button" class="btn main-btn btn-outline-dark">File a Complaints</button></a>
                </div>
                <div class="sec-ninetwo" style="padding-top:50px;">
                        <h1>Frequiently asked<br> questions.</h1>
@@ -475,7 +475,7 @@
       <div class="footer" style="margin-top:50px;" >
           <div class="card-group" style="padding-bottom:50px;  ">
               <div class="card text-center">
-                  <img src="{% static 'img/logo.png'%}" class="img-fluid">
+                  <img src=".//static/img/logo.png" class="img-fluid">
                    <p style="color:#666;">File online consumer complaint from any state or district. We prepare your consumer complaint for consumer court and consumer forum in state or district or any consumer court and forum in India.</p>
                   <div class="fst">
                         <a class="link" href="https://youtube.com"><i class="fab fa-youtube fa-1.5x  "></i></a>
@@ -483,13 +483,13 @@
                         <a class="link" href="https://twitter.com/rajukum53143215"><i class="fab fa-twitter fa-1.5x  "></i></a>
                         <a  class="link" href="https://www.instagram.com/raju_kumar3164/"><i class="fab fa-instagram fa-1.5x  "></i></a>
                   </div>
-                        <a href="#" ><img src="{% static 'badge-android-grey.png'%}"> </a>
+                        <a href="#" ><img src=".//static/badge-android-grey.png"> </a>
               </div>
               <div class="card" style="padding:10px;">
                   <h6>Home</h6>
                   <a href="/">Home</a>
                    <a href="#">Register</a>
-                  <a href="/login">Login</a>
+                  <a href="./form.html">Login</a>
                    <a href="#">Company Registration</a>
                   <a href="#">Lawyer Registration</a>
                    <a href="#">Check Case Status</a>
@@ -497,7 +497,7 @@
               </div>
                <div class="card">
                   <h6>Take Action</h6>
-                   <a href="/filecomplaint">File a Complaints</a>
+                   <a href="./filecomplaint.html">File a Complaints</a>
                    <a href="#">Talk to Lawyer</a>
                </div>
                <div class="card">
